@@ -1,0 +1,67 @@
+﻿@model Users;
+@section Styles {
+    @*Login Page css*@
+    <link rel="stylesheet" href="~/css/userLogin.css" />
+    @*Login/ Registration Page animation css*@
+    <link rel="stylesheet" href="~/css/login-register-animation.css" />
+}
+<header>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        <div class="login-registration">
+            <div class="animation-wrapper container-item">
+                <span class="aiharmony_Name">aiharmony</span>
+                <div class="stagger-visualizer">
+                    <div class="cursor color-red"></div>
+                    <div class="dots-wrapper"></div>
+                </div>
+            </div>
+            <div class="container-item">
+                <form class="Signupform" method="post">
+                    @Html.AntiForgeryToken()
+                    <h1 class="formloginTitle">Create your account</h1>
+                    <div class="loginfields">
+                        <span class="logincontainer">
+                            <span asp-validation-for="firstName" style="color:red; font-size:12px"></span><br />
+                            <label class="signupfname-lable" asp-for="firstName">FirstName:</label><br />
+                            <input class="signupfname-input" asp-for="firstName" autocomplete="off" /><br />
+                            <span asp-validation-for="lastName" style="color:red; font-size:12px"></span><br />
+                            <label class="signuplname-lable" asp-for="lastName">LastName:</label><br />
+                            <input class="signuplname-input" asp-for="lastName" autocomplete="off" /><br />
+                            <span asp-validation-for="emailId" style="color:red; font-size:12px"></span><br />
+                            <label class="loginemailid-lable" asp-for="emailId">Email Id:</label> <br />
+                            <span class="loginemailidplusicon"><input class="loginemailid-input" type="email" asp-for="emailId" autocomplete="off" /><i class="fa-solid fa-envelope"></i></span> <br />
+                            <span asp-validation-for="password" style="color:red; font-size:12px"></span><br />
+                            <label class="loginpassword-lable" asp-for="password">Password:</label> <br />
+                            <span class="loginpasswordplusicon"><input class="loginpassword-input" type="password" asp-for="password" id="password" autocomplete="off" /><i id="eye-icon" class="fa-regular fa-eye eyeIcon"></i></span> <br />
+                            <button class="loginbtn" type="submit" asp-controller="Home" asp-action="signup">Signup</button> <br />
+                            <span class="Signuppageroute">Already have an aiharmony account?<a class="signupboldtext" asp-controller="Home" asp-action="Index"><b> login</b></a></span>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+@section scripts {
+    <script src="~/js/anime.min.js"></script>
+    <script src="~/js/animation.js"></script>
+    <script src="https://kit.fontawesome.com/59fd3ac906.js" crossorigin="anonymous"></script>
+    <script>
+        let eyeicon = document.getElementById("eye-icon");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = () => {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeicon.className = "fa-solid fa-eye";
+            } else {
+                password.type = "password";
+                eyeicon.className = "fa-regular fa-eye";
+            }
+        }
+    </script>
+}

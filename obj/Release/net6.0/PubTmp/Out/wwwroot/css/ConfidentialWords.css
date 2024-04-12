@@ -1,0 +1,65 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+.wordsmaincontainer {
+    margin: 25px auto;
+    width: 800px;
+    background-color: #FAF9F6;
+    border-radius:5px;
+    padding:20px;
+}
+
+.addwordForm{
+    width:100%;
+}
+
+.wordinput {
+    width: 650px;
+    border: none;
+    outline: none;
+    border: solid 2px #F2F4F4;
+    border-radius:5px;
+    padding: 5px 10px;
+}
+.wordaddbtn{
+    width:100px;
+    border:none;
+    outline:none;
+    color:white;
+    background-color:black;
+    padding:5px 0px;
+}
+.listofWordsContainer {
+    display: flex;
+    width: 800px;
+    height: max-content;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.listofWordsContainer::-webkit-scrollbar{
+    display:none;
+}
+.listofWordsContainer{
+    width:800px;
+}
+.word {
+    width: 650px;
+    padding: 5px 10px;
+    background-color: #F2F4F4;
+    margin:2px 0px;
+}
+.deletebtnContainer {
+    width: 100px;
+    background-color: #c70909;
+    margin: 2px 0px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    border:none;
+}
+.deleteicon{
+    color:white;
+}

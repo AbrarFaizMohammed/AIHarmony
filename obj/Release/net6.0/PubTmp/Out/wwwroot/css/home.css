@@ -1,0 +1,111 @@
+﻿* {
+   margin:0;
+   padding:0;
+}
+.homebtncontainer {
+    box-shadow: 0 0 .5rem #ABB2B9;
+    width: max-content;
+    margin: 10% auto;
+    z-index:100;
+    border-radius:10px;
+}
+.homeAiImageIcons{
+    width:50px;
+    height:50px;
+    aspect-ratio:1/2;
+    cursor:pointer;
+}
+.lable-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 4rem;
+    width: max-content;
+    height: max-content;
+    caret-color: transparent;
+}
+.homelable {
+    width: 90px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: .5rem;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    text-shadow: 0 0 .15rem #ABB2B9;
+    cursor: pointer;
+    caret-color: transparent;
+}
+    .homelable::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(to top right, #34495E, #D0D3D4);
+        box-shadow: 0 0 .5rem #ABB2B9;
+        border-radius: .5rem;
+        z-index: -1;
+        transition: 100ms ease-in-out inset;
+        caret-color: transparent;
+    }
+#OpenAi:checked ~ .lable-container label[for="OpenAi"]::before {
+    inset: -3px;
+}
+
+#Gemini:checked ~ .lable-container label[for="Gemini"]::before {
+    inset: -3px;
+}
+
+#Copilot:checked ~ .lable-container label[for="Copilot"]::before {
+    inset: -3px;
+}
+input {
+    display: none;
+}
+.homeGobtn {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    position:relative;
+    bottom:20px;
+}
+.homeoptionselectbtn {
+    width: 130px;
+    height: 38px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 3px;
+    color: black;
+    box-shadow: -1px 1px 1rem #E5E8E8;
+}
+.singleselectbtn, .dualselectbtn {
+    width: 65px;
+    height: 30px;
+    border-radius: 25px;
+    cursor:pointer;
+    align-items:center;
+}
+.singleselectbtn{
+    background-color:black;
+}
+.singledot{
+    color:white;
+    font-size:9px;
+}
+.dualdot {
+    color: black;
+    font-size: 9px;
+}

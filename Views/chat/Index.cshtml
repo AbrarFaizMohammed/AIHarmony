@@ -1,0 +1,100 @@
+﻿@section Styles {
+    @*Home page css*@
+    <link defer rel="stylesheet" href="~/css/chat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+}
+@{
+    string? SelectedAIValue1 = ViewData["SelectedAIValue1"] as string;
+    string? imgtag1 = "";
+   @switch (SelectedAIValue1)
+        {
+            case "OpenAi":
+            imgtag1 = "~/Images/openai-icon.png";
+            break;
+            case "Gemini":
+            imgtag1 ="~/Images/google-gemini-icon.png";
+                break;
+            case "Copilot":
+            imgtag1 ="~/Images/copilot-icon.png";
+                break;
+    }
+
+    string? userName = Convert.ToString(TempData["UserName"]);
+    string? Userinitial = "";
+    if (userName != null && userName!="")
+    {
+        Userinitial = userName.Substring(0, 1).ToUpper();
+    }
+
+    string userId = ViewData["UserIdentification"] as string;
+}
+
+<header>
+    <partial name="_navbar" />
+</header>
+   <main role="main" class="pb-3">
+       <div class="chatmaincontainer">
+        <div id="chatinfo" class="chatInfocontainer">
+            <div id="newchatcoontainer" class="newchat"><img src="@Url.Content(imgtag1)" alt="@SelectedAIValue1" id="aiimgname" class="ailogo" /><p class="newchattext"><b>New Chat</b></p><i class="fa-regular fa-pen-to-square newpagebtn" onclick="createNewChatWindow()"></i></div>
+            <div id="UserDetails" class="UserInfodetails" data-my-UserId="@userId"><p id="userinitial" class="initials"><span class="initialLetter">@Userinitial</span></p> <span id="UserName">@userName</span></div>
+        </div>
+        <button id="slide" class="slidebtn"><span class="slideIcon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span></button>
+        <div id="chatdisplay" class="chatdisplaycontainer">
+            <div id="displaychatarea" class="chatdisplayarea"></div>
+            <form autocomplete="off" id="formUserQuery" class="userQueryForm">
+                @Html.AntiForgeryToken()
+                <a class="textmiddlewarebtn" asp-controller="AddConfidentialInformation" asp-action="Index"><i class="fa-solid fa-shield textmiddlewareicon"></i></a> <textarea id="userquery" class="usertextbox" name="userQuery" placeholder="Message aiharmony..."></textarea><button id="sendmsgbtn" type="submit" class="userbtn"><i class="fa-solid fa-location-arrow arrowUserbtn"></i></button>
+            </form>
+        </div>
+    </div>
+         
+    </main>
+
+
+
+@section scripts {
+    <script src="https://kit.fontawesome.com/59fd3ac906.js" crossorigin="anonymous"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chatIndex.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var chatInfocontainer = document.getElementById("chatinfo");
+            var chatdisplaycontainer = document.getElementById("chatdisplay");
+            var slidebtn = document.getElementById("slide");
+            var newchatcontainer = document.getElementById("newchatcoontainer");
+            var userDetailContainer = document.getElementById("UserDetails");
+
+            function slidecontainer() {
+                slidebtn.addEventListener('click', () => {
+                    if (chatInfocontainer.style.width === "0%") {
+                        chatInfocontainer.style.width = "20%";
+                        chatdisplaycontainer.style.width = "80%";
+                        setTimeout(() => {
+                            newchatcontainer.classList.remove('hidden');
+                            userDetailContainer.classList.remove('hidden');
+                        }, 250);
+                    } else {
+                        newchatcontainer.classList.add('hidden');
+                        userDetailContainer.classList.add('hidden');
+                        setTimeout(() => {
+                            chatInfocontainer.style.width = "0%";
+                            chatdisplaycontainer.style.width = "100%";
+                        }, 250);
+                    }
+                });
+            }
+
+            slidecontainer();
+        });
+        function createNewChatWindow() {
+            var chatpage1 = document.getElementById("displaychatarea");
+
+            chatpage1.innerHTML = '';
+
+        }
+    </script>
+}

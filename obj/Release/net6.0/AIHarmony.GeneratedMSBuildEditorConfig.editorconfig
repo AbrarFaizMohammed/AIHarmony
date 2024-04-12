@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AIHarmony
+build_property.RootNamespace = AIHarmony
+build_property.ProjectDir = C:\Users\abrar\Documents\SummerLearning\FullstackLearning\AIHarmony\AIHarmony\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\abrar\Documents\SummerLearning\FullstackLearning\AIHarmony\AIHarmony
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/AddConfidentialInformation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkQ29uZmlkZW50aWFsSW5mb3JtYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/AISelection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQUlTZWxlY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/chat/comparechat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2hhdFxjb21wYXJlY2hhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/chat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2hhdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Home/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Shared/_navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9uYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Shared/_Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abrar/Documents/SummerLearning/FullstackLearning/AIHarmony/AIHarmony/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sg60ozlj8e

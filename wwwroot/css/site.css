@@ -1,0 +1,47 @@
+<style >
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+</style >
+
+html {
+    font-size: 14px;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 100vh;
+    background-color: #1a1c1b;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+/*nav bar logout btn*/
+.Userlogout{
+   position:absolute;
+   right:15px;
+   cursor:pointer;
+}
+
+
+.navbar {
+    background-color: #1a1c1b;
+    
+}
+.nav-link, .navbar-brand {
+    text-decoration: none;
+    color: #a2b19b;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #a2b19b;
+    cursor:pointer;
+}

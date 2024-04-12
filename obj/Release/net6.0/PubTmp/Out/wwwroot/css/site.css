@@ -1,0 +1,25 @@
+html {
+  font-size: 14px;
+}
+body {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+/*nav bar logout btn*/
+.Userlogout{
+   position:absolute;
+   right:15px;
+   cursor:pointer;
+}

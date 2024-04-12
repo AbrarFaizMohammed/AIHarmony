@@ -1,0 +1,93 @@
+﻿@section Styles {
+    @*Home page css*@
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+<header>
+    <partial name="_navbar"/>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        <div class="homebtncontainer">
+            <div class="homeoptionselectbtn"><div id="singleOption" class="singleselectbtn"><i id="singledt" class="fa-solid fa-circle singledot"></i></div><div id="dualOption" class="dualselectbtn"><i id="dualdts1" class="fa-solid fa-circle dualdot"></i> <i id="dualdts2" class="fa-solid fa-circle dualdot"></i></div></div>
+            <form id="aiSelectionForm" method="post">
+                @Html.AntiForgeryToken()
+                <input type="checkbox" name="AIName" value="OpenAi" id="OpenAi"/>
+                <input type="checkbox" name="AIName" value="Gemini" id="Gemini"/>
+                <input type="checkbox" name="AIName" value="Copilot" id="Copilot" disabled/>
+                <div class="lable-container">
+                    <label class="homelable" for="OpenAi"><img class="homeAiImageIcons" src="~/Images/openai-icon.png" alt="OpenAi" /></label>
+                    <label class="homelable" for="Gemini"><img class="homeAiImageIcons" src="~/Images/google-gemini-icon.png" alt="Gemini" /></label>
+                    <label class="homelable disableOption" for="Copilot"><img class="homeAiImageIcons" src="~/Images/copilot-icon.png" alt="Copilot" /></label>
+                </div>
+                <button class="homeGobtn" asp-controller="AISelection" asp-action="getIndex">Go <i class="fa-solid fa-location-arrow"></i></button>
+            </form>
+        </div>
+    </main>
+</div>
+
+@section scripts {
+    <script src="https://kit.fontawesome.com/59fd3ac906.js" crossorigin="anonymous"></script>
+    <script>
+        var singleSelection = document.getElementById("singleOption");
+        var dualSelection = document.getElementById("dualOption");
+        var singleSelectiondot = document.getElementById("singledt");
+        var dualSelectiondot1 = document.getElementById("dualdts1");
+        var dualSelectiondot2 = document.getElementById("dualdts2");
+        var aioptions = document.getElementById("aiSelectionForm");
+        var optionSelectionRestrict = "Single";
+        var checkboxes = aioptions.querySelectorAll('input[type="checkbox"]');
+
+        singleSelection.addEventListener('click', () => {
+            singleSelection.style.backgroundColor = '#a2b19b';
+            singleSelectiondot.style.color = 'black';
+            dualSelection.style.backgroundColor = 'transparent';
+            dualSelectiondot1.style.color = 'white';
+            dualSelectiondot2.style.color = 'white';
+            optionSelectionRestrict = "Single";
+            updateCheckboxEventListeners();
+            resetCheckboxes();
+        });
+
+        dualSelection.addEventListener('click', () => {
+            dualSelection.style.backgroundColor = '#a2b19b';
+            dualSelectiondot1.style.color = 'black';
+            dualSelectiondot2.style.color = 'black';
+            singleSelection.style.backgroundColor = 'transparent';
+            singleSelectiondot.style.color = 'white';
+            optionSelectionRestrict = "Dual";
+            updateCheckboxEventListeners();
+            resetCheckboxes();
+        });
+
+        function updateCheckboxEventListeners() {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.removeEventListener('click', checkboxClickHandler);
+                checkbox.addEventListener('click', checkboxClickHandler);
+            });
+        }
+
+        function resetCheckboxes() {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+
+        function checkboxClickHandler() {
+            var checkedCount = 0;
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    checkedCount++;
+                }
+            });
+
+            if (optionSelectionRestrict === "Single" && checkedCount > 1) {
+                this.checked = false;
+            } else if (optionSelectionRestrict === "Dual" && checkedCount > 2) {
+                this.checked = false;
+            }
+        }
+
+        updateCheckboxEventListeners();
+    </script>
+}

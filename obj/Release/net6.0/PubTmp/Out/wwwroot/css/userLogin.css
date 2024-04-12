@@ -1,0 +1,105 @@
+﻿:root {
+    --forminput-background-color: #e0e5e1;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.login-registration {
+    display: flex;
+    border-radius: 10px;
+    z-index: 100;
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -280px;
+    margin-left: -400px;
+    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 4%);
+}
+.container-item {
+    flex: 1;
+}
+
+.formloginTitle{
+    margin:auto;
+    width:max-content;
+}
+.loginform {
+    width: 400px;
+    margin: auto;
+    height: max-content;
+    position:relative;
+    top:10%;
+}
+.Signupform {
+    width: 400px;
+    margin: auto;
+    height: max-content;
+}
+.loginfields {
+    width: 350px;
+    height: max-content;
+    margin: auto;
+    padding: 10% 0;
+    margin-top:-40px;
+}
+.logincontainer {
+    position: relative;
+    left: 20%;
+}
+.loginemailid-input, .loginpassword-input {
+    border: none;
+    outline: none;
+    background-color: var(--forminput-background-color);
+}
+.loginemailidplusicon, .loginpasswordplusicon {
+    border-radius: 5px;
+    background-color: var(--forminput-background-color);
+    display:block;
+    height:30px;
+    width:max-content;
+    padding:2px 5px;
+}
+.loginbtn{
+    width:225px;
+    border:none;
+    padding:2px 0;
+    background-color:black;
+    color:white;
+    cursor:pointer;
+}
+.eyeIcon{
+    cursor:pointer;
+}
+.Signuppageroute{
+    font-size:10px;
+    color:gray;
+}
+.signupboldtext {
+    color: black;
+    font-size: 12px;
+    text-decoration:none;
+}
+.signupfname-input, .signuplname-input {
+    height: 30px;
+    width: 220px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: var(--forminput-background-color);
+    border: none;
+    outline: none;
+}
+
+.loginemailidplusicon {
+    margin-bottom: -15px;
+}
+.signupfname-input, .signuplname-input{
+    margin-bottom:5px;
+}
+.footer{
+    display:none;
+}

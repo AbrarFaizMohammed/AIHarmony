@@ -1,0 +1,36 @@
+﻿@section styles{
+    <link rel="stylesheet" href="~/css/ConfidentialWords.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+}
+@{
+    var confodentialWords = ViewData["UserConfidentialWords"] as List<string>;
+}
+
+<header>
+    <partial name="_navbar" />
+</header>
+<main role="main" class="pb-3">
+    <div class="wordsmaincontainer">
+        <form autocomplete="false" class="addwordForm" asp-controller="AddConfidentialInformation" asp-action="getIndex" method="post">
+            @Html.AntiForgeryToken()
+           <input class="wordinput" type="text" name="word" value="" placeholder="Enter your confidential word...." />
+            <button class="wordaddbtn" type="submit"><i class="fa-solid fa-circle-plus fa-beat"></i></button>
+        </form>
+        @foreach (var word in confodentialWords)
+        {
+
+            <form asp-controller="AddConfidentialInformation" asp-action="deleteWord" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="WordName" value="@word" />
+            <div class="listofWordsContainer">
+                <div class="word">@word</div><button type="submit" class="deletebtnContainer"><i class="fa-solid fa-trash-can deleteicon"></i></button>
+            </div>
+            </form>
+        }
+    </div>
+
+</main>
+@section scripts{
+    <script src="https://kit.fontawesome.com/59fd3ac906.js" crossorigin="anonymous"></script>
+}
