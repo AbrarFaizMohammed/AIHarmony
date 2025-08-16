@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abrar\\Documents\\SummerLearning\\FullstackLearning\\AIHarmony\\AIHarmony\\AIHarmony.csproj": {}
+    "/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/AIHarmony.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abrar\\Documents\\SummerLearning\\FullstackLearning\\AIHarmony\\AIHarmony\\AIHarmony.csproj": {
+    "/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/AIHarmony.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abrar\\Documents\\SummerLearning\\FullstackLearning\\AIHarmony\\AIHarmony\\AIHarmony.csproj",
+        "projectUniqueName": "/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/AIHarmony.csproj",
         "projectName": "AIHarmony",
-        "projectPath": "C:\\Users\\abrar\\Documents\\SummerLearning\\FullstackLearning\\AIHarmony\\AIHarmony\\AIHarmony.csproj",
-        "packagesPath": "C:\\Users\\abrar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abrar\\Documents\\SummerLearning\\FullstackLearning\\AIHarmony\\AIHarmony\\obj\\",
+        "projectPath": "/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/AIHarmony.csproj",
+        "packagesPath": "/Users/abrarfaizmohammed/.nuget/packages/",
+        "outputPath": "/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abrar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/abrarfaizmohammed/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -39,11 +37,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
@@ -130,15 +129,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[9.0.8, 9.0.8]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[9.0.8, 9.0.8]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.linux-x64",
-              "version": "[6.0.27, 6.0.27]"
+              "version": "[9.0.8, 9.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -149,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -21,6 +21,7 @@ DotNetEnv.Env.Load();
 
 builder.Services.AddDbContext<Applicationdbcontext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
+    .Replace("${SA_PASSWORD}", Environment.GetEnvironmentVariable("SA_PASSWORD"))
     ));
 
 

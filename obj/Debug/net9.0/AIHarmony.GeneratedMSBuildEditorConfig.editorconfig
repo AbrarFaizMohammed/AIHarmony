@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AIHarmony
+build_property.RootNamespace = AIHarmony
+build_property.ProjectDir = /Users/abrarfaizmohammed/Documents/Projects/AIHarmony/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/abrarfaizmohammed/Documents/Projects/AIHarmony
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/AddConfidentialInformation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRkQ29uZmlkZW50aWFsSW5mb3JtYXRpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/AISelection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQUlTZWxlY3Rpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/chat/comparechat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvY2hhdC9jb21wYXJlY2hhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/chat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvY2hhdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Home/signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9zaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Shared/_navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19uYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Shared/_Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Ob3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/abrarfaizmohammed/Documents/Projects/AIHarmony/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-14fakgdblm
